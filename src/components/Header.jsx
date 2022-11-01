@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { HeaderStyled } from "./styles/Header.Styled";
-import { BsCodeSlash } from "react-icons/bs";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { HeaderStyled } from './styles/Header.Styled';
+import { BsCodeSlash } from 'react-icons/bs';
 
 class Header extends React.Component {
   render() {
@@ -22,13 +22,13 @@ class Header extends React.Component {
 Header.propTypes = {
   title: PropTypes.any,
   heading: PropTypes.any,
-  base: PropTypes.any,
+  base: PropTypes.any
 };
 
 Header.prototypes = {
   title: PropTypes.string.isRequired,
   heading: PropTypes.string.isRequired,
-  base: PropTypes.string.isRequired,
+  base: PropTypes.string.isRequired
 };
 
 export default Header;

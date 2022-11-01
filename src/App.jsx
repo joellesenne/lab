@@ -1,30 +1,30 @@
-import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
-import ReactGA from "react-ga";
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import ReactGA from 'react-ga';
 
-import { CookieConsent } from "react-cookie-consent";
-import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
-import { IoIosArrowUp } from "react-icons/io";
+import { CookieConsent } from 'react-cookie-consent';
+import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
+import { IoIosArrowUp } from 'react-icons/io';
 
-import { useToggleTheme } from "./hooks/userToggleTheme";
+import { useToggleTheme } from './hooks/userToggleTheme';
 
-import GlobalStyle from "./theme/globalStyle";
-import { darkTheme, lightTheme } from "./theme/toggleThemeStyle";
+import GlobalStyle from './theme/globalStyle';
+import { darkTheme, lightTheme } from './theme/toggleThemeStyle';
 
-import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
-import Toggle from "./components/Toggle";
-import ScrollToTop from "./components/ScrollToTop.jsx";
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import Toggle from './components/Toggle';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
-  ReactGA.initialize("UA-28372011-2");
+  ReactGA.initialize('UA-28372011-2');
   ReactGA.pageview(window.location.pathname + window.location.search);
 
   const [theme, toggleTheme] = useToggleTheme();
-  const themeMode = theme === "light" ? lightTheme : darkTheme;
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
   let toggleTitle;
-  if (theme === "light") {
+  if (theme === 'light') {
     toggleTitle = <BsFillMoonFill />;
   } else {
     toggleTitle = <BsFillSunFill />;
@@ -40,12 +40,12 @@ function App() {
       setVisible(false);
     }
   };
-  window.addEventListener("scroll", toggleVisible);
+  window.addEventListener('scroll', toggleVisible);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth'
     });
   };
 
@@ -58,12 +58,8 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-      <Toggle
-        toggleTheme={toggleTheme}
-        title={toggleTitle}
-        arial-label="Toggle theme"
-      />
-      <div style={{ display: visible ? "inline" : "none" }}>
+      <Toggle toggleTheme={toggleTheme} title={toggleTitle} arial-label="Toggle theme" />
+      <div style={{ display: visible ? 'inline' : 'none' }}>
         <ScrollToTop scrollToTop={scrollToTop} title={iconArrowUp} />
       </div>
       <CookieConsent
@@ -71,17 +67,16 @@ function App() {
         buttonText="OK"
         cookieName="myAwesomeCookieName2"
         style={{
-          fontSize: "1.75rem",
-          color: theme === "light" ? darkTheme.text : lightTheme.text,
-          background: theme === "light" ? darkTheme.body : lightTheme.body,
+          fontSize: '1.75rem',
+          color: theme === 'light' ? darkTheme.text : lightTheme.text,
+          background: theme === 'light' ? darkTheme.body : lightTheme.body
         }}
         buttonStyle={{
-          background: theme === "light" ? darkTheme.text : lightTheme.text,
-          color: theme === "light" ? darkTheme.body : lightTheme.body,
-          fontSize: "1.5rem",
+          background: theme === 'light' ? darkTheme.text : lightTheme.text,
+          color: theme === 'light' ? darkTheme.body : lightTheme.body,
+          fontSize: '1.5rem'
         }}
-        expires={150}
-      >
+        expires={150}>
         This website uses cookies to enhance the user experience.
       </CookieConsent>
     </ThemeProvider>

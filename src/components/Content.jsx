@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { ContentStyled } from "./styles/Content.Styled";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { ContentStyled } from './styles/Content.Styled';
 
 class Content extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class Content extends React.Component {
 }
 
 Content.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default Content;

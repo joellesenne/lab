@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import ReactCodepen from "react-codepen-embed";
-import { ItemStyled, LinkStyled, ListStyled } from "./styles/Lab.Styled.js";
-import process from "prop-types/prop-types";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import ReactCodepen from 'react-codepen-embed';
+import { ItemStyled, LinkStyled, ListStyled } from './styles/Lab.Styled.js';
+import process from 'prop-types/prop-types';
 
 function Lab() {
   const [loading, setLoading, error, setError] = useState(false);
@@ -34,16 +34,12 @@ function Lab() {
           <h2>
             <a href="https://codepen.io/" target="_blank" rel="noreferrer">
               CodePen
-            </a>{" "}
+            </a>{' '}
             online code editor
           </h2>
           <p>
-            Script & design by{" "}
-            <a
-              href="https://codepen.io/joellesenne/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            Script & design by{' '}
+            <a href="https://codepen.io/joellesenne/" target="_blank" rel="noreferrer">
               @joellesenne
             </a>
           </p>
@@ -52,8 +48,7 @@ function Lab() {
               <LinkStyled
                 href={`https://codepen.io/joellesenne/full/${item.url}/`}
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 {item.name}
               </LinkStyled>
               <ReactCodepen
