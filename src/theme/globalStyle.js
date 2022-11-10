@@ -83,6 +83,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     text-decoration: none;
     font-weight: var(--fw-300);
+    cursor: pointer;
     transition: opacity var(--duration) linear;
     &:hover {
       outline-width: 0;
