@@ -56,7 +56,7 @@ function Lab() {
                 user="joellesenne"
                 title={item.name}
                 defaultTab="result"
-                height={450}
+                height={350}
               />
             </ItemStyled>
           ))}
