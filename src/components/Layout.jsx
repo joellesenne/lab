@@ -26,12 +26,12 @@ class Layout extends React.Component {
                 transform: `translateY(${interpolatedStyles.translateY}px)`,
                 opacity: interpolatedStyles.opacity
               }}>
-              <Header title={site.title} heading={site.heading} base={site.base} />
+              <Header titleUrl={site.titleUrl} heading={site.heading} baseUrl={site.baseUrl} />
             </div>
           )}
         </Motion>
         {children}
-        <Footer name={site.name} url={site.url} />
+        <Footer siteName={site.siteName} siteUrl={site.siteUrl} />
       </LayoutStyled>
     );
   }

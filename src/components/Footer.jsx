@@ -1,17 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { PropTypes } from 'prop-types';
 import { FooterStyled } from './styles/Footer.Styled.js';
 import getYear from '../utils/getYear';
 
 class Footer extends React.Component {
   render() {
-    let { name, url } = this.props;
+    let { siteName, siteUrl } = this.props;
     return (
       <FooterStyled>
         <p>
           &copy; {getYear} - All rights reserved -{' '}
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            {name}
+          <a href={siteUrl} target="_blank" rel="noopener noreferrer" title={siteName}>
+            {siteName}
           </a>
         </p>
       </FooterStyled>
@@ -20,13 +20,8 @@ class Footer extends React.Component {
 }
 
 Footer.propTypes = {
-  name: PropTypes.any,
-  url: PropTypes.any
-};
-
-Footer.prototypes = {
-  name: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  siteName: PropTypes.string.isRequired,
+  siteUrl: PropTypes.string.isRequired
 };
 
 export default Footer;

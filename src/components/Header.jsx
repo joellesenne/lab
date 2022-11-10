@@ -1,16 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { PropTypes } from 'prop-types';
 import { HeaderStyled } from './styles/Header.Styled';
 import { BsCodeSlash } from 'react-icons/bs';
 
 class Header extends React.Component {
   render() {
-    let { title, heading, base } = this.props;
+    let { titleUrl, heading, baseUrl } = this.props;
     return (
       <HeaderStyled>
-        <a href={base} title={title}>
+        <a href={baseUrl} title={titleUrl}>
           <h1>
-            <BsCodeSlash /> {title}
+            <BsCodeSlash /> {titleUrl}
           </h1>
         </a>
         <p>{heading}</p>
@@ -20,15 +20,9 @@ class Header extends React.Component {
 }
 
 Header.propTypes = {
-  title: PropTypes.any,
-  heading: PropTypes.any,
-  base: PropTypes.any
-};
-
-Header.prototypes = {
-  title: PropTypes.string.isRequired,
+  titleUrl: PropTypes.string.isRequired,
   heading: PropTypes.string.isRequired,
-  base: PropTypes.string.isRequired
+  baseUrl: PropTypes.string.isRequired
 };
 
 export default Header;

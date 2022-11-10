@@ -1,7 +1,7 @@
 export const site = {
-  title: 'Lab',
+  titleUrl: 'Lab',
   heading: 'Various coding experiments and demos',
-  base: '/',
-  url: 'https://joellesenne.dev',
-  name: 'Joël Lesenne'
+  baseUrl: '/',
+  siteUrl: 'https://joellesenne.dev',
+  siteName: 'Joël Lesenne'
 };
