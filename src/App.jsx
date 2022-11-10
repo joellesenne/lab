@@ -14,6 +14,7 @@ import { darkTheme, lightTheme } from './theme/toggleThemeStyle';
 
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import { SectionStyled } from './components/styles/Layout.Styled';
 import Toggle from './components/Toggle';
 import ScrollToTop from './components/ScrollToTop.jsx';
 
@@ -52,33 +53,35 @@ function App() {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-      <Toggle toggleTheme={toggleTheme} title={toggleTitle} arial-label="Toggle theme" />
-      <div style={{ display: visible ? 'inline' : 'none' }}>
-        <ScrollToTop scrollToTop={scrollToTop} title={iconArrowUp} />
-      </div>
-      <CookieConsent
-        location="bottom"
-        buttonText="OK"
-        cookieName="myAwesomeCookieName2"
-        style={{
-          fontSize: '1.75rem',
-          color: theme === 'light' ? darkTheme.text : lightTheme.text,
-          background: theme === 'light' ? darkTheme.body : lightTheme.body
-        }}
-        buttonStyle={{
-          background: theme === 'light' ? darkTheme.text : lightTheme.text,
-          color: theme === 'light' ? darkTheme.body : lightTheme.body,
-          fontSize: '1.5rem'
-        }}
-        expires={150}>
-        This website uses cookies to enhance the user experience.
-      </CookieConsent>
+      <SectionStyled>
+        <Toggle toggleTheme={toggleTheme} title={toggleTitle} arial-label="Toggle theme" />
+        <BrowserRouter>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+        <div style={{ display: visible ? 'inline' : 'none' }}>
+          <ScrollToTop scrollToTop={scrollToTop} title={iconArrowUp} />
+        </div>
+        <CookieConsent
+          location="bottom"
+          buttonText="OK"
+          cookieName="myAwesomeCookieName2"
+          style={{
+            fontSize: '1.75rem',
+            color: theme === 'light' ? darkTheme.text : lightTheme.text,
+            background: theme === 'light' ? darkTheme.body : lightTheme.body
+          }}
+          buttonStyle={{
+            background: theme === 'light' ? darkTheme.text : lightTheme.text,
+            color: theme === 'light' ? darkTheme.body : lightTheme.body,
+            fontSize: '1.5rem'
+          }}
+          expires={150}>
+          This website uses cookies to enhance the user experience.
+        </CookieConsent>
+      </SectionStyled>
     </ThemeProvider>
   );
 }
