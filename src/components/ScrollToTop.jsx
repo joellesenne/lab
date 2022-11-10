@@ -1,6 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { LinkScrollToTopStyled } from './styles/ScrollToTop.Styled.js';
+import { PropTypes } from 'prop-types';
+import { LinkScrollToTopStyled } from './styles/Buttom.Styled';
 
 class ScrollToTop extends React.Component {
   render() {
@@ -10,13 +10,8 @@ class ScrollToTop extends React.Component {
 }
 
 ScrollToTop.propTypes = {
-  scrollToTop: PropTypes.any,
-  title: PropTypes.any
-};
-
-ScrollToTop.propTypes = {
   scrollToTop: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.object.isRequired
 };
 
 export default ScrollToTop;

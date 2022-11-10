@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { PropTypes } from 'prop-types';
 
-import { ButtonToggleStyled } from './styles/Toggle.Styled';
+import { ButtonToggleStyled } from './styles/Buttom.Styled';
 
 class Toggle extends React.Component {
   render() {
@@ -11,13 +11,8 @@ class Toggle extends React.Component {
 }
 
 Toggle.propTypes = {
-  toggleTheme: PropTypes.any,
-  title: PropTypes.any
-};
-
-Toggle.propTypes = {
   toggleTheme: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.object.isRequired
 };
 
 export default Toggle;
