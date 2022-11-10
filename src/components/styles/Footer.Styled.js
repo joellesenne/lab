@@ -9,13 +9,14 @@ export const FooterStyled = styled.footer`
   grid-template-rows: auto;
   justify-content: space-between;
   justify-items: flex-start;
-  margin-bottom: 1rem;
-  padding: 3.5rem;
+  margin-block-end: 1rem;
+  padding-block: 3.5rem;
+  padding-inline: 3.5rem;
   height: 77px;
   font-size: 0.85em;
-  @media (max-width: 768px) {
-    margin-bottom: 5rem;
-
+  @media only screen and (max-width: 768px) {
+    margin-block-end: 5rem;
+    padding-inline: 8rem;
     font-size: 0.8em;
   }
 `;

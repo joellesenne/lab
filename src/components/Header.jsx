@@ -13,7 +13,7 @@ class Header extends React.Component {
             <BsCodeSlash /> {titleUrl}
           </h1>
         </a>
-        <p>{heading}</p>
+        <p dir="rtl">{heading}</p>
       </HeaderStyled>
     );
   }
