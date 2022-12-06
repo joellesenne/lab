@@ -61,7 +61,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-        <div style={{ display: visible ? 'inline' : 'none' }}>
+        <div dir="rtl" style={{ display: visible ? 'block' : 'none' }}>
           <ScrollToTop scrollToTop={scrollToTop} title={iconArrowUp} />
         </div>
         <CookieConsent
