@@ -2,15 +2,15 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Gallery from '../components/Lab.jsx';
 import Content from '../components/Content';
-import { Helmet } from 'react-helmet';
+import { HelmetProvider } from 'react-helmet-async';
 
 class NotFound extends React.Component {
   render() {
     return (
       <>
-        <Helmet>
+        <HelmetProvider>
           <title>Lab</title>
-        </Helmet>
+        </HelmetProvider>
         <Layout>
           <Content>
             <Gallery />

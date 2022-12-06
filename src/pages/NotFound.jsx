@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
-import { Helmet } from 'react-helmet';
+import { HelmetProvider } from 'react-helmet-async';
 
 class NotFound extends React.Component {
   render() {
     return (
       <>
-        <Helmet>
+        <HelmetProvider>
           <title>404 - Not Found! | Lab</title>
-        </Helmet>
+        </HelmetProvider>
         <Layout>
           <h2>404 - Not Found!</h2>
           <p>
