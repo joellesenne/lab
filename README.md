@@ -82,7 +82,7 @@ npm start
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/joellesenne/lab.joellesenne.dev/issues). You can also take a look at the [contributing guide](https://github.com/joellesenne/lab.joellesenne.dev/blob/main/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/joellesenne/lab/issues). You can also take a look at the [contributing guide](https://github.com/joellesenne/lab/blob/main/CONTRIBUTING.md).
 
 ## Show your support
 
