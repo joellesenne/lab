@@ -35,7 +35,7 @@ export const ButtonToggleStyled = styled(ButtonStyled)`
 
 export const LinkScrollToTopStyled = styled(ButtonStyled)`
   bottom: 1.45rem;
-  transform: translateX(65rem);
+  transform: translateX(4.5rem);
   @media only screen and (max-width: 768px) {
     bottom: 1rem;
     transform: translateX(0);

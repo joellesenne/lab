@@ -13,7 +13,7 @@ export const FooterStyled = styled.footer`
   padding-block: 3.5rem;
   padding-inline: 3.5rem;
   height: 77px;
-  font-size: 0.85em;
+  font-size: 1.5ex;
   @media only screen and (max-width: 768px) {
     margin-block-end: 5rem;
     padding-inline: 8rem;

@@ -10,6 +10,6 @@ export const ContentStyled = styled.article`
   }
   @media only screen and (max-width: 768px) {
     margin-block-end: 0.5rem;
-    margin-inline: 6rem;
+    margin-inline: 4.5rem;
   }
 `;
