@@ -23,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
     font-size: 62.5%;
     line-height: 1.15;
+    tab-size: 4;
     overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
     @media (prefers-reduced-motion: no-preference) {
@@ -34,8 +35,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     max-width: inherit;
     color: ${({ theme }) => theme.text};
-    //font-family: -apple-system, "San Francisco", BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
     font-size: 1.8rem;
     line-height: 1.618;
     text-transform: Uppercase;
@@ -61,29 +64,27 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    -ms-word-break: break-all;
     word-break: break-word;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
     hyphens: auto;
   }
   h1 {
-    font-size: 3.2em;
+    font-size: 5ex;
   }
   h2 {
-    font-size: 2em;
+    font-size: 3ex;
   }
   p {
     margin: 0;
-    font-size: 1.25em;
+    font-size: 2ex;
     letter-spacing: -0.6px;
+  }
+  a, button {
+    cursor: pointer;
   }
   a {
     color: ${({ theme }) => theme.text};
     text-decoration: none;
     font-weight: var(--fw-300);
-    cursor: pointer;
     transition: opacity var(--duration) linear;
     &:hover {
       outline-width: 0;
@@ -94,7 +95,6 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
     border-width: 0;
     background-color: transparent;
-    cursor: pointer;
     &:focus :not(:focus-visible) {
       outline: none;
     }
@@ -110,7 +110,7 @@ const GlobalStyle = createGlobalStyle`
   ul, ol, dd{margin:0; padding:0; list-style:none;}
   li {
     color: inherit;
-    font-size: 1.75em;
+    font-size: 3ex;
     font-weight: bold;
     text-rendering: optimizeLegibility;
   }
