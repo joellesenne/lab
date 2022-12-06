@@ -5,18 +5,17 @@ import { ItemStyled, LinkStyled, ListStyled } from './styles/Lab.Styled.js';
 import process from 'prop-types/prop-types';
 
 function Lab() {
-  const [loading, setLoading, error, setError] = useState(false);
+  const [loading, setLoading, errors, setErrors] = useState(false);
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const getLab = async () => {
       setLoading(true);
-
       try {
         const response = await axios(process.env.REACT_APP_API_URL);
         setData(response.data);
-      } catch (error) {
-        setError(true);
+      } catch (errors) {
+        setErrors(true);
       }
 
       setLoading(false);
@@ -26,7 +25,7 @@ function Lab() {
 
   return (
     <>
-      {error && <h2>Something went wrong...</h2>}
+      {errors && <h2>Something went wrong...</h2>}
       {loading ? (
         <h2>Loading...</h2>
       ) : (
