@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Motion, spring, presets } from 'react-motion';
 import { LayoutStyled } from './styles/Layout.Styled';
 import Header from './Header';
 import Footer from './Footer';
@@ -11,25 +10,7 @@ class Layout extends React.Component {
     let { children } = this.props;
     return (
       <LayoutStyled>
-        <Motion
-          defaultStyle={{
-            opacity: 0,
-            translateY: 30
-          }}
-          style={{
-            opacity: spring(1),
-            translateY: spring(0, presets.wobbly)
-          }}>
-          {(interpolatedStyles) => (
-            <div
-              style={{
-                transform: `translateY(${interpolatedStyles.translateY}px)`,
-                opacity: interpolatedStyles.opacity
-              }}>
-              <Header titleUrl={site.titleUrl} heading={site.heading} baseUrl={site.baseUrl} />
-            </div>
-          )}
-        </Motion>
+        <Header titleUrl={site.titleUrl} heading={site.heading} baseUrl={site.baseUrl} />
         {children}
         <Footer siteName={site.siteName} siteUrl={site.siteUrl} />
       </LayoutStyled>
