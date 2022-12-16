@@ -7,7 +7,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 First fork this project.
 
-- git clone <https://github.com/joellesenne/lab.joellesenne.dev.git>
+- git clone <https://github.com/joellesenne/lab.git>
 - npm install
 - git checkout -b my-fix
 
