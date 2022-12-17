@@ -2,16 +2,19 @@
   Welcome to my Lab 👋
 </h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-2.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/joellesenne/lab.joellesenne.dev#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-  <a href="https://twitter.com/joellesenne" target="_blank">
-    <img alt="Twitter: joellesenne" src="https://img.shields.io/twitter/follow/joellesenne.svg?style=social" />
-  </a>
+    <a href="https://www.codacy.com/gh/joellesenne/lab/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=joellesenne/lab&amp;utm_campaign=Badge_Grade">
+        <img alt="Codacy Badge" src="https://app.codacy.com/project/badge/Grade/6553513b8d1b49d2a5f87e96e1fa79e0"/>
+    </a>
+    <img alt="Version" src="https://img.shields.io/badge/version-2.0.0-blue.svg?cacheSeconds=2592000" />
+    <a href="https://github.com/joellesenne/lab#readme" target="_blank">
+        <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+    </a>
+    <a href="LICENSE" target="_blank">
+        <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+    </a>
+    <a href="https://twitter.com/joellesenne" target="_blank">
+        <img alt="Twitter: joellesenne" src="https://img.shields.io/twitter/follow/joellesenne.svg?style=social" />
+    </a>
 </p>
 
 > Various coding experiments & demo
@@ -20,7 +23,7 @@
 
 ### ✨ [Demo](https://lab.joellesenne.dev)
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+**Table of Contents**
 
 - [Prerequisites](#prerequisites)
 - [Install](#install)
@@ -30,13 +33,9 @@
 - [Show your support](#show-your-support)
 - [📝 License](#-license)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ## Prerequisites
 
-- npm >=8.0.0
-- node >=16.0.0
-- react >=18.0.0
+This project requires [node](https://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
@@ -89,14 +88,10 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 Give a ⭐️ if this project helped you!
 
 <a href="https://www.patreon.com/joellesenne">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+  <img alt="Become a patron" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
 
 ## 📝 License
 
 Copyright © 2022 [Joël Lesenne](https://github.com/joellesenne). <br />
 This project is [MIT](LICENSE) licensed.
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
