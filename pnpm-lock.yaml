@@ -4,7 +4,7 @@ specifiers:
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0
   '@testing-library/user-event': 14.4.3
-  axios: 1.2.1
+  axios: 1.2.2
   dotenv: 16.0.3
   eslint: 8.30.0
   eslint-config-prettier: 8.5.0
@@ -28,7 +28,7 @@ dependencies:
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@testing-library/user-event': 14.4.3
-  axios: 1.2.1
+  axios: 1.2.2
   prop-types: 15.8.1
   react: 18.2.0
   react-codepen-embed: 1.1.0_react@18.2.0
@@ -3138,8 +3138,8 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /axios/1.2.1:
-    resolution: {integrity: sha512-I88cFiGu9ryt/tfVEi4kX2SITsvDddTajXTOFmt2uK1ZVA8LytjtdeyefdQWEf5PU8w+4SSJDoYnggflB5tW4A==}
+  /axios/1.2.2:
+    resolution: {integrity: sha512-bz/J4gS2S3I7mpN/YZfGFTqhXTYzRho8Ay38w2otuuDR322KzFIWm/4W2K6gIwvWaws5n+mnb7D1lN9uD+QH6Q==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
