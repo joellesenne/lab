@@ -1,7 +1,7 @@
 const getYear = () => {
   const currentYear = new Date().getFullYear();
-  let yearStart = '2019';
-  return currentYear == yearStart ? yearStart : yearStart + '-' + currentYear;
+  const yearStart = 2019;
+  return currentYear === yearStart ? yearStart.toString() : `${yearStart}-${currentYear}`;
 };
 
 export default getYear();

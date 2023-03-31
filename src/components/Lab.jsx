@@ -1,26 +1,28 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import process from 'prop-types/prop-types.js';
 import axios from 'axios';
 import ReactCodepen from 'react-codepen-embed';
-import { ItemStyled, LinkStyled, ListStyled } from './styles/Lab.Styled.js';
-import process from 'prop-types/prop-types';
 
-function Lab() {
-  const [loading, setLoading, errors, setErrors] = useState(false);
+import { ItemStyled, LinkStyled, ListStyled } from './styles/Lab.Styled.js';
+
+const Lab = () => {
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState(false);
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const getLab = async () => {
+    async function getLab() {
       setLoading(true);
       try {
         const response = await axios(process.env.REACT_APP_API_URL);
         setData(response.data);
-      } catch (errors) {
+      } catch (error) {
         setErrors(true);
       }
-
       setLoading(false);
-    };
-    getLab();
+    }
+    getLab().then();
   }, []);
 
   return (
@@ -37,7 +39,7 @@ function Lab() {
             online code editor
           </h2>
           <p>
-            Script & design by{' '}
+            Script &amp; design by{' '}
             <a href="https://codepen.io/joellesenne/" target="_blank" rel="noreferrer">
               @joellesenne
             </a>
@@ -63,6 +65,10 @@ function Lab() {
       )}
     </>
   );
-}
+};
+
+Lab.propTypes = {
+  prop: PropTypes.string
+};
 
 export default Lab;

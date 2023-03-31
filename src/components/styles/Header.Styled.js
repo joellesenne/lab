@@ -24,24 +24,17 @@ const lightSpeedIn = keyframes`
 
 export const HeaderStyled = styled.header`
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 0;
-  grid-row-gap: 24px;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-row-gap: 24px;
   justify-content: space-between;
   justify-items: flex-end;
-  margin-block-end: 3rem;
-  margin-inline: 3rem;
-  transform: translateX(-100%) skewX(0deg);
+  margin: 3rem;
   opacity: 0;
-  animation-name: ${lightSpeedIn};
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-out;
-  & h1 {
+  transform: translateX(-100%) skewX(0deg);
+  animation: ${lightSpeedIn} 1s ease-out both;
+  h1 {
     position: relative;
-    & svg {
+    svg {
       position: absolute;
       top: 6px;
       left: -75px;
@@ -59,6 +52,6 @@ export const HeaderStyled = styled.header`
     //padding-inline-start: 8rem;
   } 
   @media only screen and (max-width: 768px) {
-    margin-block-end: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 `;

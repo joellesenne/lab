@@ -5,12 +5,11 @@ export const ButtonStyled = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-block: 2rem;
-  padding-inline: 2rem;
+  padding: 2rem;
   color: ${({ theme }) => theme.text};
   font-size: 3.5rem;
   z-index: 999;
-  & svg {
+  svg {
     transform: scale(1);
     transition: transform var(--duration) linear;
     &:hover {

@@ -1,35 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
-import ReactGA from 'react-ga';
-
-import { CookieConsent } from 'react-cookie-consent';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { IoIosArrowUp } from 'react-icons/io';
+import { CookieConsent } from 'react-cookie-consent';
+import ReactGA from 'react-ga';
 
-import { useToggleTheme } from './hooks/userToggleTheme';
-
-import GlobalStyle from './theme/globalStyle';
-import { darkTheme, lightTheme } from './theme/toggleThemeStyle';
+import { UseToggleTheme } from './hooks/UseToggleTheme.jsx';
 
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import { SectionStyled } from './components/styles/Layout.Styled';
 import Toggle from './components/Toggle';
 import ScrollToTop from './components/ScrollToTop.jsx';
 
-function App() {
-  ReactGA.initialize('UA-28372011-2');
-  ReactGA.pageview(window.location.pathname + window.location.search);
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './theme/globalStyle';
+import { SectionStyled } from './components/styles/Layout.Styled';
+import { darkTheme, lightTheme } from './theme/toggleThemeStyle';
 
-  const [theme, toggleTheme] = useToggleTheme();
+const App = () => {
+  const [theme, toggleTheme] = UseToggleTheme();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-  let toggleTitle;
-  if (theme === 'light') {
-    toggleTitle = <BsFillMoonFill />;
-  } else {
-    toggleTitle = <BsFillSunFill />;
-  }
 
   const [visible, setVisible] = useState(false);
   const iconArrowUp = <IoIosArrowUp />;
@@ -37,11 +27,19 @@ function App() {
     const scrolled = document.documentElement.scrollTop;
     if (scrolled > 300) {
       setVisible(true);
-    } else if (scrolled <= 300) {
+    } else {
       setVisible(false);
     }
   };
-  window.addEventListener('scroll', toggleVisible);
+
+  useEffect(() => {
+    ReactGA.initialize('UA-28372011-2');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    window.addEventListener('scroll', toggleVisible);
+    return () => {
+      window.removeEventListener('scroll', toggleVisible);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -54,28 +52,34 @@ function App() {
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
       <SectionStyled>
-        <Toggle toggleTheme={toggleTheme} title={toggleTitle} arial-label="Toggle theme" />
+        <Toggle
+          toggleTheme={toggleTheme}
+          title={theme === 'light' ? <BsFillMoonFill /> : <BsFillSunFill />}
+          aria-label="Toggle theme"
+        />
         <BrowserRouter>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-        <div dir="rtl" style={{ display: visible ? 'block' : 'none' }}>
-          <ScrollToTop scrollToTop={scrollToTop} title={iconArrowUp} />
-        </div>
+        {visible && (
+          <div dir="rtl">
+            <ScrollToTop scrollToTop={scrollToTop} title={iconArrowUp} />
+          </div>
+        )}
         <CookieConsent
           location="bottom"
           buttonText="OK"
           cookieName="myAwesomeCookieName2"
           style={{
             fontSize: '1.75rem',
-            color: theme === 'light' ? darkTheme.text : lightTheme.text,
-            background: theme === 'light' ? darkTheme.body : lightTheme.body
+            color: themeMode.text,
+            background: themeMode.body
           }}
           buttonStyle={{
-            background: theme === 'light' ? darkTheme.text : lightTheme.text,
-            color: theme === 'light' ? darkTheme.body : lightTheme.body,
+            background: themeMode.text,
+            color: themeMode.body,
             fontSize: '1.5rem'
           }}
           expires={150}>
@@ -84,6 +88,6 @@ function App() {
       </SectionStyled>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

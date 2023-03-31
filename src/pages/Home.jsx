@@ -1,24 +1,23 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import Gallery from '../components/Lab.jsx';
-import Content from '../components/Content';
+import React, { Fragment } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 
-class NotFound extends React.Component {
-  render() {
-    return (
-      <>
-        <HelmetProvider>
-          <title>Lab</title>
-        </HelmetProvider>
-        <Layout>
-          <Content>
-            <Gallery />
-          </Content>
-        </Layout>
-      </>
-    );
-  }
-}
+import Layout from '../components/Layout';
+import Content from '../components/Content';
+import Gallery from '../components/Lab.jsx';
 
-export default NotFound;
+const Home = () => {
+  return (
+    <>
+      <HelmetProvider>
+        <title>Lab</title>
+      </HelmetProvider>
+      <Layout>
+        <Content>
+          <Gallery />
+        </Content>
+      </Layout>
+    </>
+  );
+};
+
+export default Home;
