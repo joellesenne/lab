@@ -21,7 +21,7 @@ specifiers:
   react-icons: 4.8.0
   react-router-dom: 6.10.0
   react-scripts: 5.0.1
-  styled-components: 5.3.9
+  styled-components: 5.3.11
   web-vitals: 3.3.1
 
 dependencies:
@@ -39,7 +39,7 @@ dependencies:
   react-icons: 4.8.0_react@18.2.0
   react-router-dom: 6.10.0_biqbaboplfbrettd7655fr4n2y
   react-scripts: 5.0.1_eslint@8.38.0+react@18.2.0
-  styled-components: 5.3.9_biqbaboplfbrettd7655fr4n2y
+  styled-components: 5.3.11_biqbaboplfbrettd7655fr4n2y
   web-vitals: 3.3.1
 
 devDependencies:
@@ -3277,7 +3277,7 @@ packages:
       - supports-color
     dev: false
 
-  /babel-plugin-styled-components/2.1.1_styled-components@5.3.9:
+  /babel-plugin-styled-components/2.1.1_styled-components@5.3.11:
     resolution: {integrity: sha512-c8lJlszObVQPguHkI+akXv8+Jgb9Ccujx0EetL7oIvwU100LxO6XAGe45qry37wUL40a5U9f23SYrivro2XKhA==}
     peerDependencies:
       styled-components: '>= 2'
@@ -3287,7 +3287,7 @@ packages:
       babel-plugin-syntax-jsx: 6.18.0
       lodash: 4.17.21
       picomatch: 2.3.1
-      styled-components: 5.3.9_biqbaboplfbrettd7655fr4n2y
+      styled-components: 5.3.11_biqbaboplfbrettd7655fr4n2y
     dev: false
 
   /babel-plugin-syntax-jsx/6.18.0:
@@ -9309,8 +9309,8 @@ packages:
       webpack: 5.78.0
     dev: false
 
-  /styled-components/5.3.9_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-Aj3kb13B75DQBo2oRwRa/APdB5rSmwUfN5exyarpX+x/tlM/rwZA2vVk2vQgVSP6WKaZJHWwiFrzgHt+CLtB4A==}
+  /styled-components/5.3.11_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-uuzIIfnVkagcVHv9nE0VPlHPSCmXIUGKfJ42LNjxCCTDTL5sgnJ8Z7GZBq0EnLYGln77tPpEpExt2+qa+cZqSw==}
     engines: {node: '>=10'}
     peerDependencies:
       react: '>= 16.8.0'
@@ -9322,7 +9322,7 @@ packages:
       '@emotion/is-prop-valid': 1.2.0
       '@emotion/stylis': 0.8.5
       '@emotion/unitless': 0.7.5
-      babel-plugin-styled-components: 2.1.1_styled-components@5.3.9
+      babel-plugin-styled-components: 2.1.1_styled-components@5.3.11
       css-to-react-native: 3.2.0
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
