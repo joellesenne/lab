@@ -22,7 +22,7 @@ specifiers:
   react-router-dom: 6.10.0
   react-scripts: 5.0.1
   styled-components: 5.3.9
-  web-vitals: 3.3.1
+  web-vitals: 3.3.2
 
 dependencies:
   '@testing-library/jest-dom': 5.16.5
@@ -40,7 +40,7 @@ dependencies:
   react-router-dom: 6.10.0_biqbaboplfbrettd7655fr4n2y
   react-scripts: 5.0.1_eslint@8.38.0+react@18.2.0
   styled-components: 5.3.9_biqbaboplfbrettd7655fr4n2y
-  web-vitals: 3.3.1
+  web-vitals: 3.3.2
 
 devDependencies:
   dotenv: 16.0.3
@@ -9856,8 +9856,8 @@ packages:
       minimalistic-assert: 1.0.1
     dev: false
 
-  /web-vitals/3.3.1:
-    resolution: {integrity: sha512-LTfY5GjcY3ngFzNsYFSYL+AmVmlWrzPTUxSMDis2rZbf+SzT7HH3NH4Y/l45XOlrAIunOBeURN9qtBHkRskAiA==}
+  /web-vitals/3.3.2:
+    resolution: {integrity: sha512-qRkpmSeKfEWAzNhtX541xA8gCJ+pqCqBmUlDVkVDSCSYUvfvNqF+k9g8I+uyreRcDBdfiJrd0/aLbTy5ydo49Q==}
     dev: false
 
   /webidl-conversions/4.0.2:
