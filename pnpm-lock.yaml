@@ -18,7 +18,7 @@ specifiers:
   react-dom: ^18.2.0
   react-ga: 3.3.1
   react-helmet-async: ^1.3.0
-  react-icons: 4.8.0
+  react-icons: 4.10.1
   react-router-dom: 6.10.0
   react-scripts: 5.0.1
   styled-components: 5.3.9
@@ -36,7 +36,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-ga: 3.3.1_sh5qlbywuemxd2y3xkrw2y2kr4
   react-helmet-async: 1.3.0_biqbaboplfbrettd7655fr4n2y
-  react-icons: 4.8.0_react@18.2.0
+  react-icons: 4.10.1_react@18.2.0
   react-router-dom: 6.10.0_biqbaboplfbrettd7655fr4n2y
   react-scripts: 5.0.1_eslint@8.38.0+react@18.2.0
   styled-components: 5.3.9_biqbaboplfbrettd7655fr4n2y
@@ -8438,8 +8438,8 @@ packages:
       shallowequal: 1.1.0
     dev: false
 
-  /react-icons/4.8.0_react@18.2.0:
-    resolution: {integrity: sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==}
+  /react-icons/4.10.1_react@18.2.0:
+    resolution: {integrity: sha512-/ngzDP/77tlCfqthiiGNZeYFACw85fUjZtLbedmJ5DTlNDIwETxhwBzdOJ21zj4iJdvc0J3y7yOsX3PpxAJzrw==}
     peerDependencies:
       react: '*'
     dependencies:
