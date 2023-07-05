@@ -10,7 +10,7 @@ specifiers:
   eslint-config-prettier: 8.8.0
   eslint-plugin-prettier: 4.2.1
   eslint-plugin-react: 7.32.2
-  prettier: 2.8.8
+  prettier: 3.0.0
   prop-types: 15.8.1
   react: ^18.2.0
   react-codepen-embed: 1.1.0
@@ -46,9 +46,9 @@ devDependencies:
   dotenv: 16.3.1
   eslint: 8.43.0
   eslint-config-prettier: 8.8.0_eslint@8.43.0
-  eslint-plugin-prettier: 4.2.1_zh6vkmzat4wtnmvmftdassiwyu
+  eslint-plugin-prettier: 4.2.1_oyn3sampkeyzfz563spyuj4zum
   eslint-plugin-react: 7.32.2_eslint@8.43.0
-  prettier: 2.8.8
+  prettier: 3.0.0
 
 packages:
 
@@ -4857,7 +4857,7 @@ packages:
       semver: 6.3.0
     dev: false
 
-  /eslint-plugin-prettier/4.2.1_zh6vkmzat4wtnmvmftdassiwyu:
+  /eslint-plugin-prettier/4.2.1_oyn3sampkeyzfz563spyuj4zum:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -4870,7 +4870,7 @@ packages:
     dependencies:
       eslint: 8.43.0
       eslint-config-prettier: 8.8.0_eslint@8.43.0
-      prettier: 2.8.8
+      prettier: 3.0.0
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -8343,9 +8343,9 @@ packages:
       fast-diff: 1.3.0
     dev: true
 
-  /prettier/2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
+  /prettier/3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
