@@ -9,7 +9,7 @@ const ScrollToTop = ({ scrollToTop, title }) => (
 
 ScrollToTop.propTypes = {
   scrollToTop: PropTypes.func.isRequired,
-  title: PropTypes.object.isRequired
+  title: PropTypes.string.isRequired
 };
 
 export default ScrollToTop;

@@ -9,7 +9,7 @@ function Toggle({ toggleTheme, title }) {
 
 Toggle.propTypes = {
   toggleTheme: PropTypes.func.isRequired,
-  title: PropTypes.object.isRequired
+  title: PropTypes.string.isRequired
 };
 
 export default Toggle;

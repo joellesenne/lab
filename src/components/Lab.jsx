@@ -71,4 +71,4 @@ Lab.propTypes = {
   prop: PropTypes.string
 };
 
-export default Lab;
+export default React.memo(Lab);
