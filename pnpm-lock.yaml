@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@testing-library/jest-dom': 5.16.5
+  '@testing-library/jest-dom': 5.17.0
   '@testing-library/react': 14.0.0
   '@testing-library/user-event': 14.4.3
   axios: 1.4.0
@@ -25,7 +25,7 @@ specifiers:
   web-vitals: 3.4.0
 
 dependencies:
-  '@testing-library/jest-dom': 5.16.5
+  '@testing-library/jest-dom': 5.17.0
   '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
   '@testing-library/user-event': 14.4.3
   axios: 1.4.0
@@ -2415,8 +2415,8 @@ packages:
       pretty-format: 27.5.1
     dev: false
 
-  /@testing-library/jest-dom/5.16.5:
-    resolution: {integrity: sha512-N5ixQ2qKpi5OLYfwQmUb/5mSV9LneAcaUfp32pn4yCnpb8r/Yz0pXFPck21dIicKmi+ta5WRAknkZCfA8refMA==}
+  /@testing-library/jest-dom/5.17.0:
+    resolution: {integrity: sha512-ynmNeT7asXyH3aSVv4vvX4Rb+0qjOhdNHnO/3vuZNqPmhDpV/+rCSGwQ7bLcmU2cJ4dvoheIO85LQj0IbJHEtg==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@adobe/css-tools': 4.2.0
