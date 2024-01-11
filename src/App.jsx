@@ -5,19 +5,19 @@ import { IoIosArrowUp } from 'react-icons/io';
 import { CookieConsent } from 'react-cookie-consent';
 import ReactGA from 'react-ga';
 
-import { UseToggleTheme } from './hooks/UseToggleTheme.jsx';
+import { ThemeProvider } from 'styled-components';
+import { UseToggleTheme } from './hooks/UseToggleTheme';
 
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Toggle from './components/Toggle';
-import ScrollToTop from './components/ScrollToTop.jsx';
+import ScrollToTop from './components/ScrollToTop';
 
-import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './theme/globalStyle';
 import { SectionStyled } from './components/styles/Layout.Styled';
 import { darkTheme, lightTheme } from './theme/toggleThemeStyle';
 
-const App = () => {
+export default function App() {
   const [theme, toggleTheme] = UseToggleTheme();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
@@ -89,5 +89,3 @@ const App = () => {
     </ThemeProvider>
   );
 };
-
-export default App;

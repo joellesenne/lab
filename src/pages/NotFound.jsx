@@ -1,10 +1,9 @@
-import React, { Fragment } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 
-import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
+import Layout from '../components/Layout';
 
-const NotFound = () => {
+export default function NotFound() {
   return (
     <>
       <HelmetProvider>
@@ -18,6 +17,4 @@ const NotFound = () => {
       </Layout>
     </>
   );
-};
-
-export default NotFound;
+}

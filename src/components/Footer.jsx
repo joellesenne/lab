@@ -1,10 +1,7 @@
-import React from 'react';
-import { PropTypes } from 'prop-types';
-
-import { FooterStyled } from './styles/Footer.Styled.js';
+import { FooterStyled } from './styles/Footer.Styled';
 import getYear from '../utils/getYear';
 
-const Footer = ({ siteName, siteUrl }) => {
+export default function Footer({ siteName, siteUrl }) {
   return (
     <FooterStyled>
       <p>
@@ -15,11 +12,4 @@ const Footer = ({ siteName, siteUrl }) => {
       </p>
     </FooterStyled>
   );
-};
-
-Footer.propTypes = {
-  siteName: PropTypes.string.isRequired,
-  siteUrl: PropTypes.string.isRequired
-};
-
-export default Footer;
+}

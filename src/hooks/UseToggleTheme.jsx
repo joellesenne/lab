@@ -11,7 +11,7 @@ export const UseToggleTheme = () => {
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem('theme');
-    localTheme && setTheme(localTheme);
+    setTheme(localTheme);
   }, []);
 
   return [theme, toggleTheme];

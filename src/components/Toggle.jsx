@@ -1,15 +1,5 @@
-import React from 'react';
-import { PropTypes } from 'prop-types';
+import { ButtonToggleStyled } from './styles/Button.Styled';
 
-import { ButtonToggleStyled } from './styles/Buttom.Styled';
-
-function Toggle({ toggleTheme, title }) {
+export default function Toggle({ toggleTheme, title }) {
   return <ButtonToggleStyled onClick={toggleTheme}>{title}</ButtonToggleStyled>;
 }
-
-Toggle.propTypes = {
-  toggleTheme: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired
-};
-
-export default Toggle;

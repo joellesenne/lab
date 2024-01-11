@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import process from 'prop-types/prop-types.js';
+import { useEffect, useState } from 'react';
+import process from 'prop-types/prop-types';
 import axios from 'axios';
 import ReactCodepen from 'react-codepen-embed';
 
-import { ItemStyled, LinkStyled, ListStyled } from './styles/Lab.Styled.js';
+import { ItemStyled, LinkStyled, ListStyled } from './styles/Lab.Styled';
 
-const Lab = () => {
+export default function Lab() {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState(false);
   const [data, setData] = useState([]);
@@ -65,10 +64,4 @@ const Lab = () => {
       )}
     </>
   );
-};
-
-Lab.propTypes = {
-  prop: PropTypes.string
-};
-
-export default React.memo(Lab);
+}

@@ -1,11 +1,10 @@
-import React, { Fragment } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 
 import Layout from '../components/Layout';
 import Content from '../components/Content';
-import Gallery from '../components/Lab.jsx';
+import Gallery from '../components/Lab';
 
-const Home = () => {
+export default function Home() {
   return (
     <>
       <HelmetProvider>
@@ -18,6 +17,4 @@ const Home = () => {
       </Layout>
     </>
   );
-};
-
-export default Home;
+}
