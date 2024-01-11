@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { IoIosArrowUp } from 'react-icons/io';
@@ -7,6 +7,8 @@ import ReactGA from 'react-ga';
 
 import { ThemeProvider } from 'styled-components';
 import { UseToggleTheme } from './hooks/UseToggleTheme';
+
+import { useScrollToTop } from "./utils";
 
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
@@ -41,13 +43,6 @@ export default function App() {
     };
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
-
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
@@ -65,7 +60,7 @@ export default function App() {
         </BrowserRouter>
         {visible && (
           <div dir="rtl">
-            <ScrollToTop scrollToTop={scrollToTop} title={iconArrowUp} />
+            <ScrollToTop scrollToTop={useScrollToTop} title={iconArrowUp} />
           </div>
         )}
         <CookieConsent

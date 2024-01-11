@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// import './theme/index.css';
+import {DevSupport} from "@react-buddy/ide-toolbox";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {ComponentPreviews, useInitial} from "./dev";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     // eslint-disable-next-line react/jsx-filename-extension
     <React.StrictMode>
-        <App />
+        <DevSupport ComponentPreviews={ComponentPreviews}
+                    useInitialHook={useInitial}
+        >
+            <App/>
+        </DevSupport>
     </React.StrictMode>
 );
 

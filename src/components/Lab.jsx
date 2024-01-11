@@ -1,32 +1,13 @@
-import { useEffect, useState } from 'react';
-import process from 'prop-types/prop-types';
-import axios from 'axios';
 import ReactCodepen from 'react-codepen-embed';
+import UseDataFetch from "../hooks/UseDataFetch";
 
 import { ItemStyled, LinkStyled, ListStyled } from './styles/Lab.Styled';
 
 export default function Lab() {
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState(false);
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    async function getLab() {
-      setLoading(true);
-      try {
-        const response = await axios(process.env.REACT_APP_API_URL);
-        setData(response.data);
-      } catch (error) {
-        setErrors(true);
-      }
-      setLoading(false);
-    }
-    getLab().then();
-  }, []);
-
+  const { data, loading, error } = UseDataFetch();
   return (
     <>
-      {errors && <h2>Something went wrong...</h2>}
+      {error && <h2>Something went wrong...</h2>}
       {loading ? (
         <h2>Loading...</h2>
       ) : (
@@ -43,7 +24,7 @@ export default function Lab() {
               @joellesenne
             </a>
           </p>
-          {data.map((item) => (
+          {data && data.map((item) => (
             <ItemStyled key={item.id}>
               <LinkStyled
                 href={`https://codepen.io/joellesenne/full/${item.url}/`}

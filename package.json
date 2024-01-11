@@ -13,8 +13,7 @@
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "lint": "eslint src/**/*.{js,jsx}",
     "lint:fix": "eslint --fix src/**/*.{js,jsx}",
-    "serve": "serve -s build",
-    "sort-package-json": "npx sort-package-json",
+    "serve": "serve -s build -p 3080",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },
@@ -37,11 +36,11 @@
     ]
   },
   "dependencies": {
+    "@react-buddy/ide-toolbox": "^2.4.0",
     "@testing-library/jest-dom": "6.2.0",
     "@testing-library/react": "14.1.2",
     "@testing-library/user-event": "14.5.2",
     "axios": "1.6.5",
-    "prop-types": "15.8.1",
     "react": "^18.2.0",
     "react-codepen-embed": "1.1.0",
     "react-cookie-consent": "9.0.0",
@@ -49,7 +48,7 @@
     "react-ga": "3.3.1",
     "react-helmet-async": "^2.0.4",
     "react-icons": "5.0.1",
-    "react-router-dom": "6.21.1",
+    "react-router-dom": "6.21.2",
     "react-scripts": "5.0.1",
     "styled-components": "6.1.8",
     "web-vitals": "3.5.1"

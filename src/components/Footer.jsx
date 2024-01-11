@@ -1,11 +1,11 @@
 import { FooterStyled } from './styles/Footer.Styled';
-import getYear from '../utils/getYear';
+import {useGetYear} from "../utils";
 
 export default function Footer({ siteName, siteUrl }) {
   return (
     <FooterStyled>
       <p>
-        &copy; {getYear} - All rights reserved -{' '}
+        &copy; {useGetYear()} - All rights reserved -{' '}
         <a href={siteUrl} target="_blank" rel="noopener noreferrer" title={siteName}>
           {siteName}
         </a>
