@@ -32,6 +32,7 @@
 - [🤝 Contributing](#-contributing)
 - [Show your support](#show-your-support)
 - [📝 License](#-license)
+- [Acknowledgments](#acknowledgments)
 
 ## Prerequisites
 
@@ -47,27 +48,44 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 # Clone this repository
 git clone  https://github.com/joellesenne/lab.git
 
-cd lab
+# Open IDE
+cd photos && code .
 
+#Or
+cd photos && webstorm .
+
+# Install with NPM
 npm install
 
-# OR
-pnpm install
-
-# OR
+# OR YARN
 yarn install
+
+# OR PNPM
+pnpm install
 ```
-Create a `.env` file similar to [`.env.example`](.env.example).
+
+## Note
+
+Create file  `.env.` add `REACT_APP_API_URL=https://api.example.com/file.json` learn more [Adding custom environment variables](https://create-react-app.dev/docs/adding-custom-environment-variables/)
 
 ## Usage
 
 ```sh
+# Run with react.js
 npm start
+
+# Or
+react-scripts start
 ```
 
 => browse to [http://localhost:3000/](http://localhost:3000/)
 
 🎉 have fun
+
+## Built With
+
+- [React](https://react.dev/) - Library used
+
 
 ## Author
 
@@ -75,13 +93,16 @@ npm start
 
 - Website: https://joellesenne.dev
 - Twitter: [@joellesenne](https://twitter.com/joellesenne)
+- mastodon: [@joellesenne](https://mastodon.social/@joellesenne)
 - Github: [@joellesenne](https://github.com/joellesenne)
 - YouTube: [@joellesenne](https://youtube.com/@joellesenne)
 - LinkedIn: [@joellesenne](https://linkedin.com/in/joellesenne)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/joellesenne/lab/issues). You can also take a look at the [contributing guide](https://github.com/joellesenne/lab/blob/main/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!
+
+Feel free to check [issues page](https://github.com/joellesenne/lab/issues). You can also take a look at the [contributing guide](https://github.com/joellesenne/lab/blob/main/CONTRIBUTING.md).
 
 ## Show your support
 
@@ -93,5 +114,12 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2022 [Joël Lesenne](https://github.com/joellesenne). <br />
+Copyright © 2024 [Joël Lesenne](https://github.com/joellesenne). <br />
 This project is [MIT](LICENSE) licensed.
+
+## Acknowledgments
+
+- [React](https://react.dev/)
+- [A (more) Modern CSS Reset - Andy Bell](https://andy-bell.co.uk/a-more-modern-css-reset/)
+- [Styled components](https://styled-components.com/)
+- [React Codepen embed](https://www.npmjs.com/package/react-codepen-embed)
