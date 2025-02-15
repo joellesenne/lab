@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export default function UseDataFetch() {
+export default function useDataFetch() {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -13,7 +13,6 @@ export default function UseDataFetch() {
                 setData(response.data);
                 setLoading(false);
             })
-            // eslint-disable-next-line no-shadow
             .catch(error => {
                 setError(error);
                 setLoading(false);

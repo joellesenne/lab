@@ -6,7 +6,7 @@ import { CookieConsent } from 'react-cookie-consent';
 import ReactGA from 'react-ga';
 
 import { ThemeProvider } from 'styled-components';
-import { UseToggleTheme } from './hooks/UseToggleTheme';
+import { useToggleTheme } from './hooks/useToggleTheme.jsx';
 
 import { useScrollToTop } from "./utils";
 
@@ -20,7 +20,7 @@ import { SectionStyled } from './components/styles/Layout.Styled';
 import { darkTheme, lightTheme } from './theme/toggleThemeStyle';
 
 export default function App() {
-  const [theme, toggleTheme] = UseToggleTheme();
+  const [theme, toggleTheme] = useToggleTheme();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   const [visible, setVisible] = useState(false);

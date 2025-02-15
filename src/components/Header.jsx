@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { BsCodeSlash } from 'react-icons/bs';
 
 import { HeaderStyled } from './styles/Header.Styled';
@@ -14,3 +15,10 @@ export default function Header({ titleUrl, heading, baseUrl }) {
     </HeaderStyled>
   );
 }
+
+Header.propTypes = {
+  name: PropTypes.string.isRequired,
+  titleUrl: PropTypes.node,
+  heading: PropTypes.node,
+  baseUrl: PropTypes.node
+};

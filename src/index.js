@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import {DevSupport} from "@react-buddy/ide-toolbox";
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {ComponentPreviews, useInitial} from "./dev";
+import App from './App.jsx';
+import reportWebVitals from './reportWebVitals.js';
+import {ComponentPreviews, useInitial} from "./dev/index.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

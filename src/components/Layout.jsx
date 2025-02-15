@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { LayoutStyled } from './styles/Layout.Styled';
 
 import { site } from '../portfolio';
@@ -12,3 +13,8 @@ export default function Layout({ children }) {
     <Footer siteName={site.siteName} siteUrl={site.siteUrl} />
   </LayoutStyled>
 }
+
+Layout.propTypes = {
+  name: PropTypes.string.isRequired,
+  children: PropTypes.node
+};

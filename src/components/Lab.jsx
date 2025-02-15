@@ -1,5 +1,5 @@
 import ReactCodepen from 'react-codepen-embed';
-import UseDataFetch from "../hooks/UseDataFetch";
+import UseDataFetch from "../hooks/useDataFetch.jsx";
 
 import { ItemStyled, LinkStyled, ListStyled } from './styles/Lab.Styled';
 

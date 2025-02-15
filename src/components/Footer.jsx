@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { FooterStyled } from './styles/Footer.Styled';
 import {useGetYear} from "../utils";
 
@@ -13,3 +14,9 @@ export default function Footer({ siteName, siteUrl }) {
     </FooterStyled>
   );
 }
+
+Footer.propTypes = {
+  name: PropTypes.string.isRequired,
+  siteUrl: PropTypes.node,
+  siteName: PropTypes.node
+};

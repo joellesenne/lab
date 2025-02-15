@@ -1,9 +1,8 @@
-import {Fragment} from "react"
 import {
     Category,
     Component,
     Variant,
-    Palette,
+    Palette
 } from "@react-buddy/ide-toolbox"
 
 export function PaletteTree() {
