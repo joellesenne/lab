@@ -5,7 +5,7 @@
     <a href="https://www.codacy.com/gh/joellesenne/lab/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=joellesenne/lab&amp;utm_campaign=Badge_Grade">
         <img alt="Codacy Badge" src="https://app.codacy.com/project/badge/Grade/6553513b8d1b49d2a5f87e96e1fa79e0"/>
     </a>
-    <img alt="Version" src="https://img.shields.io/badge/version-2.0.0-blue.svg?cacheSeconds=2592000" />
+    <img alt="Version" src="https://img.shields.io/badge/version-3.1.0-blue.svg?cacheSeconds=2592000" />
     <a href="https://github.com/joellesenne/lab#readme" target="_blank">
         <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
     </a>
