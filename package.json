@@ -46,30 +46,30 @@
   },
   "dependencies": {
     "@react-buddy/ide-toolbox": "^2.4.0",
-    "@testing-library/jest-dom": "6.6.3",
-    "@testing-library/react": "16.2.0",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "16.3.2",
     "@testing-library/user-event": "14.6.1",
-    "axios": "1.7.9",
+    "axios": "1.13.6",
     "prop-types": "^15.8.1",
-    "react": "^19.0.0",
+    "react": "^19.2.4",
     "react-codepen-embed": "1.1.0",
-    "react-cookie-consent": "9.0.0",
-    "react-dom": "^19.0.0",
+    "react-cookie-consent": "10.0.1",
+    "react-dom": "^19.2.4",
     "react-ga": "3.3.1",
     "react-helmet-async": "^2.0.5",
-    "react-icons": "5.4.0",
-    "react-router-dom": "7.1.5",
+    "react-icons": "5.5.0",
+    "react-router-dom": "7.13.1",
     "react-scripts": "5.0.1",
-    "styled-components": "6.1.15",
-    "web-vitals": "4.2.4"
+    "styled-components": "6.3.11",
+    "web-vitals": "5.1.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.20.0",
-    "dotenv": "16.4.7",
-    "eslint": "9.20.1",
-    "eslint-plugin-react": "7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "globals": "^15.15.0"
+    "@eslint/js": "^10.0.1",
+    "dotenv": "17.3.1",
+    "eslint": "10.0.2",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.3.0"
   }
 }

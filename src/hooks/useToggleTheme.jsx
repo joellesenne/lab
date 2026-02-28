@@ -1,18 +1,28 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+
+const THEME_STORAGE_KEY = 'theme';
+const THEMES = {
+  LIGHT: 'light',
+  DARK: 'dark',
+};
+
+const isThemeValue = (value) => value === THEMES.LIGHT || value === THEMES.DARK;
+
+const readStoredTheme = () => {
+  const stored = window.localStorage.getItem(THEME_STORAGE_KEY);
+  return isThemeValue(stored) ? stored : THEMES.LIGHT;
+};
 
 export const useToggleTheme = () => {
-  const [theme, setTheme] = useState('light');
-  const toggleTheme = (e) => {
-    e.preventDefault();
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    window.localStorage.setItem('theme', newTheme);
-    setTheme(newTheme);
-  };
+  const [theme, setTheme] = useState(readStoredTheme);
 
-  useEffect(() => {
-    const localTheme = window.localStorage.getItem('theme');
-    setTheme(localTheme);
-  }, []);
+  const toggleTheme = (event) => {
+    event?.preventDefault?.();
+
+    const nextTheme = theme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT;
+    window.localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+    setTheme(nextTheme);
+  };
 
   return [theme, toggleTheme];
 };
